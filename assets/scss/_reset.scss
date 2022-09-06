@@ -1,0 +1,21 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+input, button, input:focus, button:focus{
+    outline: none;
+}
+body{
+  margin: 0;
+  padding: 0; 
+  background: var(--bodyBgColor);
+  font-family: $basefont;
+}
+*{
+  font-family: $basefont;
+  @include box-sizing(border-box);
+}

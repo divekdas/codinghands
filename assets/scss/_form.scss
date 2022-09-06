@@ -1,0 +1,30 @@
+
+.morebutton{
+    height: rem(48px);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background:var(--buttonBgColor);
+    font-size: rem(18px);
+    color: var(--whiteColor);
+    text-decoration: none;
+    font-weight: 600;
+    @include border-radius(32px);
+    @include transition(all 0.3s ease);
+    .barrow{
+        width: rem(24px);
+        height: rem(24px);
+        display:block;
+        margin-left:rem(14px);
+        background:url("../img/ic_right_arrow.svg") no-repeat center center;
+        @include transition(all 0.3s ease);
+    }
+    &:hover{
+        background:var(--yellowColor);
+        color: var(--blackColor);
+        .barrow{
+            -webkit-filter: invert(100%);
+            filter: invert(100%);
+        }
+    }
+}

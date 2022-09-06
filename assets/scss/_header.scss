@@ -1,0 +1,53 @@
+nav{
+    .container{
+        display:flex;
+        align-items: center;
+        justify-content:center;
+        height: rem(46px);
+        padding: rem(11px) 0;
+        
+    }
+    .logo{
+        width: rem(90px);
+        height: rem(20px);
+        display: flex;
+        align-items: center;
+        img{
+            max-width: 100%;
+        }
+    }
+}
+.mobile-menu{
+    width: rem(20px);
+    height: rem(20px);
+    cursor: pointer;
+    border:none;
+    position: absolute;
+    left: rem(15px);
+    padding: 0;
+    background: transparent;
+    span{
+        display: block;
+        height: rem(2px);
+        position: relative;
+        width: 100%;
+        background:var(--whiteColor);
+        @include border-radius(2px);
+        &:after, &:before{
+            position: absolute;
+            content: '';
+            width: 100%;
+            left: 0;
+            height: rem(2px);
+            display: block;
+            background:var(--whiteColor);
+            @include border-radius(2px);
+        }
+        &:after{
+            top: rem(8px);
+        }
+        &:before{
+            top: rem(-8px);
+        }
+    }
+}
