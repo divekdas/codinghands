@@ -1,5 +1,8 @@
 .banner{
     background:url("../img/banner_bg.png") no-repeat center top;
+    @include tab-sm() {
+        // 
+    }
     background-size:cover;
     .container{
         display:flex;
@@ -194,6 +197,61 @@
                     }
                 }
             }
+        }
+    }
+}
+.technologies{
+    padding:rem(35px) 0;
+    .technologiesTab{
+        padding:rem(0) 0;
+        .techTab{
+            display:flex;
+            gap: rem(10px);
+            font-weight: 700;
+            font-size: rem(13px); 
+            text-align:center;
+            margin-bottom: rem(40px);
+            a{
+                text-decoration: none;
+                color: var(--whiteColor);
+                &.active{
+                    color: var(--greenColor);
+                }
+            }
+        }
+        .techTabBlock{
+            opacity: 0;
+            visibility: hidden;
+            display: flex; 
+            gap: rem(30px);
+            justify-content:space-around;
+            &.techActive{
+                opacity: 1;
+                visibility: visible; 
+            }
+        }
+        .teckBox{
+            font-size: rem(14px);
+            color: var(--grayTextColor);   
+            text-align:center;        
+            img{
+                margin-bottom: rem(10px);
+                display: block;
+                margin: 0 auto 10px;
+                max-width: rem(55px);
+            }
+        }
+    }
+}
+.projects{
+    padding:rem(35px) 0;
+    .projectList{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        .projectCard{
+            width: 100%;
+            height: rem(80px);
         }
     }
 }
