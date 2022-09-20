@@ -5,7 +5,26 @@ nav{
         justify-content:center;
         height: rem(46px);
         padding: rem(11px) 0;
-        
+        ul{
+            display: none;
+            position: absolute;
+            background: #000000;
+            left: 0;
+            width: 100%;
+            top: 47px;
+            z-index: 2;
+            margin: 0;
+            padding: 12px 0;
+            li{
+                padding: 10px 15px;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
+        }
     }
     .logo{
         width: rem(90px);
@@ -51,3 +70,65 @@ nav{
         }
     }
 }
+
+@include tab-sm(){
+
+    .mobile-menu{
+        display: none;
+    }
+    nav{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    nav .container{
+        justify-content: left;
+        padding: rem(11px) rem(15px);
+        ul{
+            margin-left: auto;
+            display: block;
+            position: relative;
+            background: transparent;
+            top: 0;
+            width: auto;
+            li{
+                list-style: none;
+                display: inline-block;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    font-weight: 400;
+                    font-size: 14px;
+                    margin-left: 15px;
+                    &:hover{
+                        color: #a2e053;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
