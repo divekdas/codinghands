@@ -28,3 +28,10 @@ $(window).on('load resize scroll', function() {
 	});
 
 });
+
+
+$(document).ready(function(){
+	$(".mobile-menu").click(function(){
+	  $(".navmenu").slideToggle();
+	});
+  });
