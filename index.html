@@ -317,15 +317,15 @@
                 Our team use time tested software development tools to ensure that your product works without any fail
                 and meets your users’ expectations.
             </p>
-            <div class="technologiesTab">
-                <div class="techTab">
-                    <a href="#" class="active">Frontend</a>
-                    <a href="#" class="">Backend</a>
-                    <a href="#" class="">Mobile</a>
-                    <a href="#" class="">Third party integration </a>
-                </div>
-                <div class="techTabContent">
-                    <div class="techTabBlock techActive">
+            <div class="technologiesTab tabs">
+                <ul class="techTab" id="tabs-nav">
+                    <li><a href="#tab1">Frontend</a></li>
+                    <li><a href="#tab2">Backend</a></li>
+                    <li><a href="#tab3">Mobile</a></li>
+                    <li><a href="#tab4">Third party integration </a></li>
+                </ul>
+                <div class="techTabContent" id="tabs-content">
+                    <div id="tab1" class="techTabBlock techActive tab-content">
                         <div class="teckBox">
                             <img src="assets/img/react_logo.svg" alt="React" />
                             Recat.js
@@ -339,6 +339,24 @@
                             HTML 5
                         </div>
                     </div>
+                    <div id="tab2" class="techTabBlock tab-content">
+                        <div class="teckBox">
+                            <img src="assets/img/react_logo.svg" alt="React" />
+                            Recat.js
+                        </div>
+                    </div>
+                    <div id="tab3" class="techTabBlock tab-content">
+                        <div class="teckBox">
+                            <img src="assets/img/react_logo.svg" alt="React" />
+                            Recat.js
+                        </div>
+                    </div>
+                    <div id="tab4" class="techTabBlock tab-content">
+                        <div class="teckBox">
+                            <img src="assets/img/react_logo.svg" alt="React" />
+                            Recat.js
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -347,7 +365,6 @@
         <div class="container1">
             <h5>A few of the amazing projects we’ve worked on</h5>
             <div class="projectList">
-
                 <div class="owl-carousel owl-theme">
                     <div class="item">
                         <div class="projectCard">
@@ -412,14 +429,72 @@
                             </a>
                         </div>
                     </div>
-                    
-
                 </div>
-
-
-
-
-
+                <div class="owl-carousel owl-carousel2 owl-theme">
+                    <div class="item">
+                        <div class="projectCard">
+                            <a href="https://">
+                                <img src="assets/img/clients/banjos_logo.png" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="projectCard">
+                            <a href="https://">
+                                <img src="assets/img/clients/homely.png" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="projectCard">
+                            <a href="https://">
+                                <img src="assets/img/clients/pistachio_logo.png" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="projectCard">
+                            <a href="https://">
+                                <img src="assets/img/clients/app-master_logo.png" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="projectCard">
+                            <a href="https://">
+                                <img src="assets/img/clients/app_logo.png" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="projectCard">
+                            <a href="https://">
+                                <img src="assets/img/clients/dream_machine_logo.png" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="projectCard">
+                            <a href="https://">
+                                <img src="assets/img/clients/nergy360_logo.png" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="projectCard">
+                            <a href="https://">
+                                <img src="assets/img/clients/save_box_logo.png" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="projectCard">
+                            <a href="https://">
+                                <img src="assets/img/clients/logo_2.png" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <a href="#" class="morebutton">View more of our portfolio <i class="barrow"></i></a>
@@ -442,7 +517,7 @@
                     <img src="assets/img/map.svg" />
                 </div>
                 <div class="content">
-                    <h5>We're based in India.
+                    <h5>We're based in India.<br>
                         We operate worldwide.</h5>
                     <p>
                         No matter where you are based out, our teams work effectively and efficiently on your schedule.
@@ -455,9 +530,13 @@
         </div>
     </section>
     <div class="text-center">
-        <a href="#" class="top-link">
-            <img src="assets/img/arrow-top.svg" />
-        </a>
+        <div class="container">
+            <div class="top-link-wrap">
+                <button class="top-link">
+                    <img src="assets/img/arrow-top.svg" />
+                </button>
+            </div>
+        </div>
     </div>
     <footer>
         <div class="container">
@@ -514,37 +593,7 @@
     <!-- Vendor JS Files -->
     <!-- <script src="assets/js/jquery.min.js"></script> -->
     <script src="assets/js/main.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.owl-carousel').owlCarousel({
-                loop: true,
-                margin: 10,
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: true
-                    },
-                    600: {
-                        items: 5,
-                        nav: false
-                    },
-                    992: {
-                        items: 5,
-                        nav: true,
-                        loop: false,
-                        margin: 15
-                    },
-                    1200: {
-                        items: 9,
-                        nav: true,
-                        loop: false,
-                        margin: 15
-                    }
-                }
-            })
-        })
-    </script>
+
 </body>
 
 </html>

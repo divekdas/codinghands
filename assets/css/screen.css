@@ -209,44 +209,26 @@ nav .logo {
     nav .container ul li a {
       margin: 0; } }
 
-.collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px; }
-
-.active, .collapsible:hover {
-  background-color: #555; }
-
-.content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1; }
-
 .banner {
   background: url("../img/banner_bg.png") no-repeat center top;
-  background-size: cover; }
+  background-size: cover;
+  overflow: hidden; }
   .banner .container-fulid {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    height: 100%;
+    min-height: 37.5rem;
     padding: 0;
     position: relative; }
     @media (min-width: 1024px) {
       .banner .container-fulid {
+        height: 100vh;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center; } }
@@ -255,7 +237,7 @@ nav .logo {
     width: 13.125rem;
     position: absolute;
     left: 0;
-    bottom: 0; }
+    top: 0rem; }
     .banner .bannerimage img {
       max-width: 100%; }
   .banner .bannertext {
@@ -265,8 +247,11 @@ nav .logo {
     line-height: 2.625rem;
     font-weight: 800;
     color: var(--whiteColor);
-    margin: 0 1.875rem 7.8125rem 0;
+    margin: 0 1.875rem 4.6875rem 0;
     position: relative; }
+    @media (min-width: 1024px) {
+      .banner .bannertext {
+        margin: 0 1.875rem 7.8125rem 0; } }
     .banner .bannertext .subtext1, .banner .bannertext .subtext2, .banner .bannertext .subtext3, .banner .bannertext .subtext4 {
       position: absolute;
       font-size: 0.5rem;
@@ -302,37 +287,31 @@ nav .logo {
       left: -1.25rem;
       bottom: -3.4375rem; }
   @media (min-width: 769px) {
-    .banner {
-      height: 550px; }
-      .banner .bannerimage {
-        width: 25rem; }
-      .banner .bannertext {
-        width: 18.75rem;
-        font-size: 3.125rem;
-        line-height: 3.75rem;
-        margin-top: 0.9375rem; }
-        .banner .bannertext .subtext1 {
-          top: 140px; }
-        .banner .bannertext .subtext2 {
-          right: 130px; }
-        .banner .bannertext .subtext3 {
-          right: 0; }
-        .banner .bannertext .subtext4 {
-          bottom: -140px; } }
+    .banner .bannerimage {
+      width: 25rem; }
+    .banner .bannertext {
+      width: 18.75rem;
+      font-size: 3.125rem;
+      line-height: 3.75rem;
+      margin-top: 0.9375rem; }
+      .banner .bannertext .subtext1 {
+        top: 140px; }
+      .banner .bannertext .subtext2 {
+        right: 130px; }
+      .banner .bannertext .subtext3 {
+        right: 0; }
+      .banner .bannertext .subtext4 {
+        bottom: -140px; } }
   @media (min-width: 991px) {
-    .banner {
-      height: 600px; }
-      .banner .bannerimage {
-        width: 450px; }
-      .banner .bannertext {
-        width: 500px;
-        font-size: 80px;
-        line-height: 85px; }
-        .banner .bannertext .subtext4 {
-          left: -100px; } }
+    .banner .bannerimage {
+      width: 450px; }
+    .banner .bannertext {
+      width: 500px;
+      font-size: 80px;
+      line-height: 85px; }
+      .banner .bannertext .subtext4 {
+        left: -100px; } }
   @media (min-width: 1200px) {
-    .banner .banner {
-      height: 600px; }
     .banner .bannerimage {
       top: 6.25rem; }
     .banner .bannertext {
@@ -365,12 +344,10 @@ nav .logo {
         font-size: 1rem;
         text-align: right; } }
   @media (min-width: 1400px) {
-    .banner {
-      height: 950px; }
-      .banner .bannerimage {
-        width: 650px; }
-      .banner .bannertext {
-        width: 700px; } }
+    .banner .bannerimage {
+      width: 650px; }
+    .banner .bannertext {
+      width: 700px; } }
 
 .section h2 {
   font-size: 1.875rem;
@@ -831,6 +808,9 @@ nav .logo {
         .technologies .technologiesTab .techTab a.active {
           color: var(--greenColor);
           background: transparent; }
+      .technologies .technologiesTab .techTab .active a {
+        color: var(--greenColor);
+        background: transparent; }
     .technologies .technologiesTab .techTabBlock {
       opacity: 0;
       visibility: hidden;
@@ -839,10 +819,9 @@ nav .logo {
       display: flex;
       gap: 1.875rem;
       -ms-flex-pack: distribute;
-          justify-content: space-around; }
-      .technologies .technologiesTab .techTabBlock.techActive {
-        opacity: 1;
-        visibility: visible; }
+          justify-content: space-around;
+      opacity: 1;
+      visibility: visible; }
     .technologies .technologiesTab .teckBox {
       font-size: 0.875rem;
       color: var(--grayTextColor);
@@ -892,7 +871,7 @@ nav .logo {
   .projects .projectList {
     margin-bottom: 50px;
     position: relative;
-    left: 200px; }
+    left: 0; }
     .projects .projectList .projectCard {
       width: 100%;
       height: 10.25rem;
@@ -939,6 +918,10 @@ nav .logo {
   .map .content {
     display: block;
     background: transparent; }
+    .map .content h5 {
+      margin-bottom: 0.625rem; }
+    .map .content p {
+      margin-bottom: 1.25rem; }
   @media (min-width: 769px) {
     .map .content-block {
       display: block; }
@@ -1087,6 +1070,10 @@ footer {
     footer .row .item:first-child {
       min-width: 50%; } }
 
+.top-link-wrap {
+  padding-bottom: 2.1875rem;
+  border-bottom: 1px solid #4A4A4A; }
+
 .top-link {
   background: #2B2B2B;
   width: 64px;
@@ -1100,7 +1087,13 @@ footer {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .top-link:hover {
+    background: var(--greenColor); }
 
 .text-center {
   text-align: center; }
