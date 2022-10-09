@@ -1229,16 +1229,24 @@ footer{
 .company-info{
     padding: 80px 0 35px;
     .row{
-        // display: flex;
-        // flex-direction: row;
-       // margin: 0 -15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
         .item{
             padding: 32px 24px;
             display: inline-block;
             width: 100%;
             background: #2B2B2B;
             border-radius: 16px;
-            margin: 10px 0;
+            margin: 10px 0 10px;
+            width: calc(50% - 10px);
+            @include tab-sm() {
+                width: calc(50% - 10px);
+            }
+            @include desktop-sm() {
+                width: calc(25% - 20px);
+                margin-bottom: 0;
+            }
             &.market{
                 span{
                     color: #F7E64F;
@@ -1274,29 +1282,7 @@ footer{
             }
         }
     }
-    @include tab-sm() {
-        .row{
-            display: flex;
-            flex-direction: row;
-           margin: 0 -15px;
-           .item{
-            margin: 10px 15px;
-           }
-        }
-    }
 
-    @include tab-sm-max() {
-        .row .item{
-            width: 47%;
-            margin: 10px 1%;
-            display: inline-flex;
-            align-items: center;
-            height: 200px;
-            span{
-                font-size:15px
-            }
-        }
-    }
 }
 
 .about-info{
