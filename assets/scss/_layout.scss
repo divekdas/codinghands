@@ -913,6 +913,8 @@
             } 
             img{
                 height: rem(24px);
+                width: auto;
+                object-fit: contain;
                 @include desktop-sm(){
                     width: 100%;
                     height: auto;
