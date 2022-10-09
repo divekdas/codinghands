@@ -17,11 +17,37 @@ nav{
             padding: 12px 0;
             li{
                 padding: 10px 15px;
+                margin-left: rem(10px);
+                margin-right: rem(10px);
+                @include border-radius(18px);
                 a{
+                    display:flex;
+                    align-items:center;
                     text-decoration: none;
                     color: #fff;
                     font-size: 14px;
                     font-weight: 600;
+                }
+                &.active{
+                    a{
+                        color: #000;
+                        font-weight: 700;
+                    }
+                }
+                &:first-child.active{
+                    background: var(--greenColor);
+                }
+                &:nth-child(2n).active{
+                    background: var(--blueColor);
+                }
+                &:nth-child(3n).active{
+                    background: var(--cyanColor);
+                }
+                &:nth-child(4n).active{
+                    background: var(--yellowColor);
+                }
+                &:nth-child(5n).active{
+                    background: var(--orangeColor);
                 }
             }
         }
@@ -95,13 +121,8 @@ nav{
                 display: inline-block;
                 a{
                     text-decoration: none;
-                    color: #fff;
                     font-weight: 400;
                     font-size: 14px;
-                    margin-left: 15px;
-                    &:hover{
-                        color: #a2e053;
-                    }
                 }
             }
         }
@@ -120,8 +141,8 @@ nav{
         background:url("../img/banner_bg.png") no-repeat center top;
         background-size:cover;
         .logo{
-            width: rem(131px);
-            height: rem(30px);
+            width: auto;
+            height: rem(50px);
         }
         .container {
             ul{

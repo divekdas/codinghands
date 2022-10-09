@@ -24,102 +24,68 @@
         <div class="container">
             <button type="button" class="mobile-menu"><span></span></button>
             <a href="index.html" class="logo"><img src="assets/img/ch_logo.svg" alt="Coding Hands logo" /></a>
-            <button type="button" class="mobile-menu"><span></span></button>
             <ul class="navmenu">
                 <li><a href="/about.html">Comapny</a></li>
                 <li><a href="/what_we_do.html">Services</a></li>
-                <li><a href="/works.html">Works</a></li>
+                <li class="active"><a href="/works.html">Works</a></li>
                 <li><a href="/career.html">Careers</a></li>
-                <li class="active"><a href="/contact.html">Contact us</a></li>
+                <li><a href="/contact.html">Contact us</a></li>
             </ul>
+        
         </div>
     </nav>
     <!-- End Header -->
-   <section class="banner-inner contact-banner">
+   <section class="banner-inner contact-banner our_work">
     <div class="container">
-       <div class="banner-wrapper">
-        <div class="banner-content">
-            <h2>
-                <span class="yellow">We’re</span>
-                Here To Help  <span class="green">You</span></h2>
+        <div class="banner-wrapper">
+            <div class="banner-content">
+                <h2>Our <span class="yellow">Works</span></h2>
+            </div>
         </div>
-        <div class="banner-image">
-            <figure>
-                <img src="./assets/img/contact-banner.svg" />
-            </figure>
-        </div>
-       </div>
-    </div>
-    <div>
-        
     </div>
    </section>
 
 
-
-   <section class="contact-wrapper">
+   <section class="works-wrapper">
     <div class="container">
-        <div class="title">
-           <h4>Happy To Talk</h4>
-           <h5>Let’s work together</h5>
-           <p>Interested in what we do or want to know more about our services & training, feel free to contact us:</p>
-        </div>
-        <div class="form-block">
-            <div class="left-block">
-                <div class="address">
-                    <h4>Contact Info</h4>
-                    <div class="item">
-                        <h6>
-                            <i><img src="./assets/img/location-icon.svg" /></i>
-                            Find us at
-                        </h6>
-                        <p>Coding Hnads Infotech LLP<br>
-                            Pearls Arcade Kanangulangara<br>
-                            Thrissur, Kerala</p>
-                    </div>
-                    <div class="item">
-                        <h6>
-                            <i><img src="./assets/img/phone-icon.svg" /></i>
-                            Contact
-                        </h6>
-                        <p>+91 5467388889</p>
-                    </div>
-                    <div class="item">
-                        <h6>
-                            <i><img src="./assets/img/mai-icon.svg" /></i>
-                            Email
-                        </h6>
-                        <p>info@codinghands.in</p>
-                    </div>
+        <div class="item-block grid">
+            <div class="grid-item">
+                <div class="item">
+                    <img src="assets/img/works/works-web-01.png" />
                 </div>
             </div>
-            <div class="right-block">
-                <h3>Got a Project in mind?</h3>
-                <form>
-                    <div class="form-group col-5">
-                        <input placeholder="First Name*" />
-                    </div>
-                    <div class="form-group col-5">
-                        <input placeholder="First Name*" />
-                    </div>
-                    <div class="form-group">
-                        <input placeholder="Email*" />
-                    </div>
-                    <div class="form-group">
-                        <input placeholder="Mobile Number*" />
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Share more about your query here"></textarea>
-                    </div>
-                    <div class="btn">
-                        <button>Send</button>
-                    </div>
-                </form>
+            <div class="grid-item">
+                <div class="item">
+                    <img src="assets/img/works/works-web-02.png" />
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="item">
+                    <img src="assets/img/works/works-web-03.png" />
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="item">
+                    <img src="assets/img/works/works-web-04.png" />
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="item">
+                    <img src="assets/img/works/works-web-05.png" />
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="item">
+                    <img src="assets/img/works/works-web-06.png" />
+                </div>
             </div>
         </div>
-    </div>
+        
+
+      </div>
    </section>
-  
+
+
    <div class="text-center">
     <div class="container">
         <div class="top-link-wrap">
@@ -185,6 +151,16 @@
     <!-- Vendor JS Files -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/main.js"></script>
-  
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script>
+        $('.grid').isotope({
+            itemSelector: '.grid-item',
+            masonry: {
+                // columnWidth: 330
+            }
+        });
+
+    </script>
+
 </body>
 </html>

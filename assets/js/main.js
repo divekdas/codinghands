@@ -22,12 +22,12 @@ $(window).on("load resize scroll", function () {
 
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
-    loop: true,
+    loop: false,
     margin: 10,
     responsiveClass: true,
     responsive: {
       0: {
-        items: 1,
+        items: 2,
         nav: true,
       },
       600: {
@@ -37,19 +37,17 @@ $(document).ready(function () {
       992: {
         items: 3,
         nav: true,
-        loop: false,
         margin: 15,
       },
       1200: {
         items: 4,
         nav: true,
-        loop: false,
         margin: 23,
       },
     },
   });
   $(".owl-carousel2").owlCarousel({
-    loop: true,
+    loop: false,
     margin: 10,
     responsiveClass: true,
     responsive: {
@@ -64,13 +62,11 @@ $(document).ready(function () {
       992: {
         items: 3,
         nav: true,
-        loop: false,
         margin: 15,
       },
       1200: {
         items: 4,
         nav: true,
-        loop: false,
         margin: 23,
       },
     },
