@@ -153,11 +153,14 @@
     <script src="assets/js/main.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script>
-        $('.grid').isotope({
+        
+        $(window).on('load', function() {
+            $('.grid').isotope({
             itemSelector: '.grid-item',
-            masonry: {
-                // columnWidth: 330
-            }
+                masonry: {
+                    // columnWidth: 330
+                }
+            });
         });
 
     </script>
