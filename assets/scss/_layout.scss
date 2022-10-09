@@ -17,7 +17,7 @@
     }
     .bannerimage{
         margin: 0;
-        width: rem(210px);
+        width: rem(250px);
         position: absolute;
         left: 0;
         top: rem(0);
@@ -26,9 +26,9 @@
         }
     }
     .bannertext{
-        width: rem(170px);
+        width: rem(200px);
         height: rem(205px);
-        font-size: rem(30px);
+        font-size: rem(33px);
         line-height: rem(42px);
         font-weight: 800;
         color: var(--whiteColor);
@@ -1852,6 +1852,8 @@ footer{
         }
     }
     &.career-banner{
+        padding-top:rem(60px);
+        padding-bottom:rem(60px);
         .banner-image {           
             width: 300px;
         }
@@ -1867,9 +1869,9 @@ footer{
         }
 
         @include tab-sm-max() {
-            height: 275px;
+            // height: 275px;
             .banner-content {
-                width: 70%;
+                width: 100%;
                 h2{
                     font-size: 30px;
                 }
@@ -1879,6 +1881,7 @@ footer{
                 height: 135px;
                 top: 70px;
                 right: 20px;
+                display:none; 
                 figure{
                     img{
                         width: 130px;
@@ -1893,7 +1896,7 @@ footer{
         @include tab-sm() {
             height: 500px;
             .banner-content {
-                width: 50%;
+                width: 100%;
                 h2{
                     font-size: 60px;
                 }
@@ -1903,6 +1906,7 @@ footer{
                 height: 350px;
                 top: 70px;
                 right: 20px;
+                display:none;
                 figure{
                     img{
                         width: 350px;
@@ -1953,6 +1957,9 @@ footer{
         }
         p{
             font-size: 14px;
+        }
+        @include desktop-md() {
+            width: 60%;
         }
     }
 

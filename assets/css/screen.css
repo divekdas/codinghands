@@ -255,16 +255,16 @@ nav .logo {
                 justify-content: center; } }
   .banner .bannerimage {
     margin: 0;
-    width: 13.125rem;
+    width: 15.625rem;
     position: absolute;
     left: 0;
     top: 0rem; }
     .banner .bannerimage img {
       max-width: 100%; }
   .banner .bannertext {
-    width: 10.625rem;
+    width: 12.5rem;
     height: 12.8125rem;
-    font-size: 1.875rem;
+    font-size: 2.0625rem;
     line-height: 2.625rem;
     font-weight: 800;
     color: var(--whiteColor);
@@ -1707,57 +1707,60 @@ footer {
       bottom: 0; }
     .banner-inner.what-wedo-banner .banner-content h2 span {
       color: var(--blueColor); }
-  .banner-inner.career-banner .banner-image {
-    width: 300px; }
-  .banner-inner.career-banner .banner-content h2 .purple {
-    color: var(--blueColor); }
-  .banner-inner.career-banner .banner-content h2 .yellow {
-    color: var(--yellowColor); }
-  @media (max-width: 768px) {
-    .banner-inner.career-banner {
-      height: 275px; }
+  .banner-inner.career-banner {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem; }
+    .banner-inner.career-banner .banner-image {
+      width: 300px; }
+    .banner-inner.career-banner .banner-content h2 .purple {
+      color: var(--blueColor); }
+    .banner-inner.career-banner .banner-content h2 .yellow {
+      color: var(--yellowColor); }
+    @media (max-width: 768px) {
       .banner-inner.career-banner .banner-content {
-        width: 70%; }
+        width: 100%; }
         .banner-inner.career-banner .banner-content h2 {
           font-size: 30px; }
       .banner-inner.career-banner .banner-image {
         width: 130px;
         height: 135px;
         top: 70px;
-        right: 20px; }
+        right: 20px;
+        display: none; }
         .banner-inner.career-banner .banner-image figure img {
           width: 130px;
           height: 135px; } }
-  @media (min-width: 769px) {
-    .banner-inner.career-banner {
-      height: 500px; }
-      .banner-inner.career-banner .banner-content {
-        width: 50%; }
-        .banner-inner.career-banner .banner-content h2 {
-          font-size: 60px; }
-      .banner-inner.career-banner .banner-image {
-        width: 350px;
-        height: 350px;
-        top: 70px;
-        right: 20px; }
-        .banner-inner.career-banner .banner-image figure img {
+    @media (min-width: 769px) {
+      .banner-inner.career-banner {
+        height: 500px; }
+        .banner-inner.career-banner .banner-content {
+          width: 100%; }
+          .banner-inner.career-banner .banner-content h2 {
+            font-size: 60px; }
+        .banner-inner.career-banner .banner-image {
           width: 350px;
-          height: 350px; } }
-  @media (min-width: 991px) {
-    .banner-inner.career-banner {
-      height: 600px; }
-      .banner-inner.career-banner .banner-content {
-        width: 800px; }
-        .banner-inner.career-banner .banner-content h2 {
-          font-size: 75px; }
-      .banner-inner.career-banner .banner-image {
-        width: 410px;
-        height: 432px;
-        top: 100px;
-        right: 20px; }
-        .banner-inner.career-banner .banner-image figure img {
+          height: 350px;
+          top: 70px;
+          right: 20px;
+          display: none; }
+          .banner-inner.career-banner .banner-image figure img {
+            width: 350px;
+            height: 350px; } }
+    @media (min-width: 991px) {
+      .banner-inner.career-banner {
+        height: 600px; }
+        .banner-inner.career-banner .banner-content {
+          width: 800px; }
+          .banner-inner.career-banner .banner-content h2 {
+            font-size: 75px; }
+        .banner-inner.career-banner .banner-image {
           width: 410px;
-          height: 432px; } }
+          height: 432px;
+          top: 100px;
+          right: 20px; }
+          .banner-inner.career-banner .banner-image figure img {
+            width: 410px;
+            height: 432px; } }
   .banner-inner .banner-image {
     position: absolute;
     right: 0;
@@ -1773,6 +1776,9 @@ footer {
       font-size: 50px; }
     .banner-inner .banner-content p {
       font-size: 14px; }
+    @media (min-width: 1200px) {
+      .banner-inner .banner-content {
+        width: 60%; } }
   .banner-inner.banner-content h2 {
     font-size: 86px; }
   @media (min-width: 1200px) {
